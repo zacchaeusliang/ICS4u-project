@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:c="http://java.sun.com/jsf/core"
+	  xmlns:ui = "http://java.sun.com/jsf/facelets"
+	  xmlns:h = "http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>test form </title>
+ <!-- this is the code home page where -->
+ <!-- It consists of  a sidebar and a textbox  and a button to edit code-->
+</head>
+<h:body>
+ <h:form>
+<div class="ui sidebar inverted vertical menu">
+    <a class="item">
+    <h:commandButton value=" Monte Carlo Simulation" action="Montecarlo" />
+    <h:commandButton value=" tenplate 1" action="Montecarlo" />
+     <h:commandButton value=" tenplate 2" action="Montecarlo" />
+    
+    </a>
+  </div>
+
+
+  <br/> <br/>
+   code: <h:inputTextarea row="1000000" col="1000000" id="code" value="#{Codehandler.code}" />
+ <br/> <br/>
+  <h:commandButton value="submit code" action="Result" />
+  
+  
+      
+   </h:form> 
+</h:body>
+</html>
